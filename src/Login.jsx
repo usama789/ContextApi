@@ -11,7 +11,7 @@ const Login = () => {
     // }, [record]);    //this will help you in update of state or update of api
     
   return (
-    <div>Login Component
+    <div>
 
         <h2>{record.id}</h2>
         <h2></h2>
