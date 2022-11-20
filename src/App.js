@@ -11,6 +11,7 @@ import {
   BrowserRouter
 } from "react-router-dom";
 import CoinDetail from './CoinDetail';
+import Favourite from './Favourite';
 function App() {
   const [search, setSearch] = useState({});    //passing valyue through context provider
   const [allRecords, setRecords] = useState([]); 
@@ -22,6 +23,7 @@ function App() {
       
       
         <Route path='/coins' exact element={<Search />} />
+        <Route path='/favourite' exact element={<Favourite />} />
         <Route path='/coinDetail/:coinId' exact element={<CoinDetail />} />
       
      

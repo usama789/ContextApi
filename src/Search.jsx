@@ -28,7 +28,7 @@ const Search = () => {
         <input type="text" placeholder='enter here' onChange={(e)=> setInput(e.target.value)} />
 
         <h2>{search.name}</h2>
-        <button onClick={()=> {searchRecord(input)}} ><Link to={`/coinDetails/${search.name}`}>Search</Link> </button>
+        <button onClick={()=> {searchRecord(input)}} ><Link to={`/coinDetail/${input}`}>Search</Link> </button>
         
         {allRecords.map((coin,index)=> (
           <SingleCoin singlecoin={coin} key={index}/>
